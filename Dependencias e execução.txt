@@ -1,0 +1,10 @@
+Pacotes instalados:
+Flask
+Numpy
+Opencv
+Imutils
+
+Desafio 3:
+Executar webstreaming.py passando como parâmetros ip e porta
+ex:
+python webstreaming.py --ip localhost --port 8000

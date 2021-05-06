@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{{ url_for('static', filename= 'img/icon.png') }}" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/uikit.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Desafio 3 - OpenCV</title>
+</head>
+<body>
+	<nav class="uk-navbar desafio-navbar">
+	    <div class="uk-navbar-center">
+	        <a href="/"><img src="{{url_for('static', filename='img/logo.png')}}" width="350px"></a>
+	    </div>
+	</nav>
+
+	<div class="uk-grid uk-grid-small">
+		<div class="uk-width-1-3 uk-padding">
+			<div class="uk-card uk-card-default uk-card-hover uk-card-body">
+				<ul class="uk-list uk-list-large uk-list-striped" uk-scrollspy-nav="closest: li; scroll: true">
+	                <li>
+	                    <a class="desafio-inline" href="#desafio3">
+	                        <span class="" uk-icon="icon: chevron-double-right; ratio: 1.2"></span>
+	                        <span class="uk-text-bold">OpenCV</span>
+	                    </a>
+	                </li>
+	                
+	            </ul>
+			</div>
+		</div>
+		<div class="uk-width-2-3 uk-padding">
+			<div class="uk-card uk-card-default uk-card-hover uk-card-body">
+				<div id="desafio3">
+					<h3 class="uk-heading-bullet uk-text-bold">OpenCV (Desafio 3)</h3>
+					<img src="{{ url_for('video_feed') }}">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div style="height: 50%;"></div>
+	<div class="desafio-footer">
+		Rodrigo da Silva Freitas | Ciência da Computação
+	</div>
+
+	<script src="{{url_for('static', filename='js/uikit.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/uikit-icons.min.js')}}"></script>
+
+</body>
+</html>
